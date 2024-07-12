@@ -7,30 +7,19 @@
   <!-- Подключение библиотеки Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: #f4f4f4;
+    /* Обеспечиваем гибкость размеров для контейнера и холста */
+    #chart-container {
+      width: 100%;
+      height: 100%;
     }
-
-    .chart-container {
-      width: 90%;
-      max-width: 800px;
-      margin: 20px auto;
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+    #allAssetsChart {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="chart-container">
+  <div id="chart-container">
     <!-- Контейнер для графика -->
     <canvas id="allAssetsChart"></canvas>
   </div>
@@ -49,29 +38,7 @@
       new Chart(ctx, {
         type: 'line',
         data: chartData[0].data,
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: chartData[0].options.plugins,
-          scales: {
-            x: {
-              type: 'time',
-              time: {
-                unit: 'month'
-              },
-              title: {
-                display: true,
-                text: 'Date'
-              }
-            },
-            y: {
-              title: {
-                display: true,
-                text: 'ROI'
-              }
-            }
-          }
-        }
+        options: chartData[0].options
       });
     }
 
