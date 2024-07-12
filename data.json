@@ -1,0 +1,98 @@
+[
+  {
+    "name": "All Assets",
+    "type": "line",
+    "data": {
+      "labels": [
+        "2024-07-11",
+        "2024-08-11"
+      ],
+      "datasets": [
+        {
+          "label": "PEPE ROI",
+          "data": [
+            -20,
+            -20
+          ],
+          "borderColor": "#51ba6f",
+          "backgroundColor": "#8f43a6"
+        },
+        {
+          "label": "DOGE ROI",
+          "data": [
+            -14,
+            -14
+          ],
+          "borderColor": "#ebd95a",
+          "backgroundColor": "#26dd17"
+        },
+        {
+          "label": "FLOKI ROI",
+          "data": [
+            -19,
+            -19
+          ],
+          "borderColor": "#b61113",
+          "backgroundColor": "#234e1b"
+        },
+        {
+          "label": "STX ROI",
+          "data": [
+            -14,
+            -14
+          ],
+          "borderColor": "#3b6c14",
+          "backgroundColor": "#38075e"
+        },
+        {
+          "label": "ARB ROI",
+          "data": [
+            -23,
+            -23
+          ],
+          "borderColor": "#62a201",
+          "backgroundColor": "#9f6c85"
+        },
+        {
+          "label": "ETH ROI",
+          "data": [
+            -16,
+            -16
+          ],
+          "borderColor": "#c45a98",
+          "backgroundColor": "#2d6dbd"
+        },
+        {
+          "label": "MATIC ROI",
+          "data": [
+            -18,
+            -18
+          ],
+          "borderColor": "#262cb7",
+          "backgroundColor": "#0e49b6"
+        },
+        {
+          "label": "ATOM ROI",
+          "data": [
+            -16,
+            -16
+          ],
+          "borderColor": "#7444f1",
+          "backgroundColor": "#2bb1d6"
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "plugins": {
+        "legend": {
+          "position": "top"
+        },
+        "title": {
+          "display": true,
+          "text": "ROI Chart for All Assets"
+        }
+      }
+    }
+  }
+]
