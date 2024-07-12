@@ -6,22 +6,13 @@
   <title>ROI Chart for All Assets</title>
   <!-- Подключение библиотеки Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    /* Обеспечиваем гибкость размеров для контейнера и холста */
-    #chart-container {
-      width: 100%;
-      height: 100%;
-    }
-    #allAssetsChart {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
 </head>
 <body>
-  <div id="chart-container">
+  <div style="max-width: 800px; margin: 20px auto;">
     <!-- Контейнер для графика -->
-    <canvas id="allAssetsChart"></canvas>
+    <div>
+      <canvas id="allAssetsChart"></canvas>
+    </div>
   </div>
 
   <script>
