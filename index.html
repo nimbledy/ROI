@@ -6,13 +6,28 @@
   <title>ROI Chart for All Assets</title>
   <!-- Подключение библиотеки Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .chart-container {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Занимать всю высоту окна */
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%; /* График будет занимать всю высоту контейнера */
+    }
+  </style>
 </head>
 <body>
-  <div style="max-width: 800px; margin: 20px auto;">
-    <!-- Контейнер для графика -->
-    <div>
-      <canvas id="allAssetsChart"></canvas>
-    </div>
+  <div class="chart-container">
+    <canvas id="allAssetsChart"></canvas>
   </div>
 
   <script>
@@ -29,7 +44,29 @@
       new Chart(ctx, {
         type: 'line',
         data: chartData[0].data,
-        options: chartData[0].options
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: chartData[0].options.plugins,
+          scales: {
+            x: {
+              type: 'time',
+              time: {
+                unit: 'month'
+              },
+              title: {
+                display: true,
+                text: 'Date'
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'ROI'
+              }
+            }
+          }
+        }
       });
     }
 
