@@ -1,80 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROI Chart for All Assets</title>
-  <!-- Подключение библиотеки Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .chart-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    canvas {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Charts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="chart-container">
-    <canvas id="allAssetsChart"></canvas>
-  </div>
+    <div class="controls">
+        <button onclick="updateChart('daily')">Daily</button>
+        <button onclick="updateChart('monthly')">Monthly</button>
+        <button onclick="updateChart('yearly')">Yearly</button>
 
-  <script>
-    // Функция для загрузки JSON данных из файла
-    async function loadJSON() {
-      const response = await fetch('data.json');
-      const data = await response.json();
-      return data;
-    }
+        <div class="checkbox-container">
+            <label>Select Coins:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="PEPE" checked>
+                <label for="PEPE">PEPE</label>
 
-    // Функция для создания графика
-    function createChart(chartData) {
-      const ctx = document.getElementById('allAssetsChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'line',
-        data: chartData[0].data,
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: chartData[0].options.plugins,
-          scales: {
-            x: {
-              type: 'time',
-              time: {
-                unit: 'month'
-              },
-              title: {
-                display: true,
-                text: 'Date'
-              }
-            },
-            y: {
-              title: {
-                display: true,
-                text: 'ROI'
-              }
-            }
-          }
-        }
-      });
-    }
+                <input type="checkbox" id="DOGE" checked>
+                <label for="DOGE">DOGE</label>
 
-    // Вызов функции загрузки данных и создания графика при загрузке страницы
-    document.addEventListener('DOMContentLoaded', async () => {
-      const chartData = await loadJSON();
-      createChart(chartData);
-    });
-  </script>
+                <input type="checkbox" id="FLOKI" checked>
+                <label for="FLOKI">FLOKI</label>
+
+                <input type="checkbox" id="STX" checked>
+                <label for="STX">STX</label>
+
+                <input type="checkbox" id="ARB" checked>
+                <label for="ARB">ARB</label>
+
+                <input type="checkbox" id="ETH" checked>
+                <label for="ETH">ETH</label>
+
+                <input type="checkbox" id="MATIC" checked>
+                <label for="MATIC">MATIC</label>
+
+                <input type="checkbox" id="ATOM" checked>
+                <label for="ATOM">ATOM</label>
+            </div>
+        </div>
+    </div>
+    <canvas id="roiChart" width="800" height="400"></canvas>
+
+    <script src="script.js"></script>
 </body>
 </html>

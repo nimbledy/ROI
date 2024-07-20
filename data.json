@@ -1,98 +1,145 @@
-[
-  {
-    "name": "All Assets",
-    "type": "line",
-    "data": {
+{
+  "daily": {
       "labels": [
-        "2024-07-11",
-        "2024-08-11"
+          "2024-07-01", "2024-07-02", "2024-07-03", "2024-07-04", "2024-07-05",
+          "2024-07-06", "2024-07-07", "2024-07-08", "2024-07-09", "2024-07-10",
+          "2024-07-11", "2024-07-12", "2024-07-13", "2024-07-14", "2024-07-15"
       ],
       "datasets": [
-        {
-          "label": "PEPE ROI",
-          "data": [
-            -20,
-            -20
-          ],
-          "borderColor": "#51ba6f",
-          "backgroundColor": "#8f43a6"
-        },
-        {
-          "label": "DOGE ROI",
-          "data": [
-            -14,
-            -14
-          ],
-          "borderColor": "#ebd95a",
-          "backgroundColor": "#26dd17"
-        },
-        {
-          "label": "FLOKI ROI",
-          "data": [
-            -19,
-            -19
-          ],
-          "borderColor": "#b61113",
-          "backgroundColor": "#234e1b"
-        },
-        {
-          "label": "STX ROI",
-          "data": [
-            -14,
-            -14
-          ],
-          "borderColor": "#3b6c14",
-          "backgroundColor": "#38075e"
-        },
-        {
-          "label": "ARB ROI",
-          "data": [
-            -23,
-            -23
-          ],
-          "borderColor": "#62a201",
-          "backgroundColor": "#9f6c85"
-        },
-        {
-          "label": "ETH ROI",
-          "data": [
-            -16,
-            -16
-          ],
-          "borderColor": "#c45a98",
-          "backgroundColor": "#2d6dbd"
-        },
-        {
-          "label": "MATIC ROI",
-          "data": [
-            -18,
-            -18
-          ],
-          "borderColor": "#262cb7",
-          "backgroundColor": "#0e49b6"
-        },
-        {
-          "label": "ATOM ROI",
-          "data": [
-            -16,
-            -16
-          ],
-          "borderColor": "#7444f1",
-          "backgroundColor": "#2bb1d6"
-        }
+          {
+              "label": "PEPE",
+              "data": [-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6],
+              "borderColor": "#ff6f61",
+              "backgroundColor": "rgba(255, 111, 97, 0.2)"
+          },
+          {
+              "label": "DOGE",
+              "data": [-14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0],
+              "borderColor": "#6b5b95",
+              "backgroundColor": "rgba(107, 91, 149, 0.2)"
+          },
+          {
+              "label": "FLOKI",
+              "data": [-19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5],
+              "borderColor": "#88d8b0",
+              "backgroundColor": "rgba(136, 216, 176, 0.2)"
+          },
+          {
+              "label": "STX",
+              "data": [-14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0],
+              "borderColor": "#ffd700",
+              "backgroundColor": "rgba(255, 215, 0, 0.2)"
+          },
+          {
+              "label": "ARB",
+              "data": [-23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9],
+              "borderColor": "#f6c1c1",
+              "backgroundColor": "rgba(246, 193, 193, 0.2)"
+          },
+          {
+              "label": "ETH",
+              "data": [-16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2],
+              "borderColor": "#d4e157",
+              "backgroundColor": "rgba(212, 225, 87, 0.2)"
+          },
+          {
+              "label": "MATIC",
+              "data": [-18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4],
+              "borderColor": "#00bcd4",
+              "backgroundColor": "rgba(0, 188, 212, 0.2)"
+          },
+          {
+              "label": "ATOM",
+              "data": [-16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2],
+              "borderColor": "#ffeb3b",
+              "backgroundColor": "rgba(255, 235, 59, 0.2)"
+          }
       ]
-    },
-    "options": {
-      "responsive": true,
-      "plugins": {
-        "legend": {
-          "position": "top"
-        },
-        "title": {
-          "display": true,
-          "text": "ROI Chart for All Assets"
-        }
-      }
-    }
+  },
+  "monthly": {
+      "labels": [
+          "2024-01", "2024-02", "2024-03", "2024-04", "2024-05",
+          "2024-06", "2024-07", "2024-08", "2024-09", "2024-10",
+          "2024-11", "2024-12"
+      ],
+      "datasets": [
+          {
+              "label": "PEPE",
+              "data": [-20, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8],
+              "borderColor": "#ff6f61",
+              "backgroundColor": "rgba(255, 111, 97, 0.2)"
+          },
+          {
+              "label": "DOGE",
+              "data": [-14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3],
+              "borderColor": "#6b5b95",
+              "backgroundColor": "rgba(107, 91, 149, 0.2)"
+          },
+          {
+              "label": "FLOKI",
+              "data": [-19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8],
+              "borderColor": "#88d8b0",
+              "backgroundColor": "rgba(136, 216, 176, 0.2)"
+          },
+          {
+              "label": "STX",
+              "data": [-14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3],
+              "borderColor": "#ffd700",
+              "backgroundColor": "rgba(255, 215, 0, 0.2)"
+          },
+          {
+              "label": "ARB",
+              "data": [-23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12],
+              "borderColor": "#f6c1c1",
+              "backgroundColor": "rgba(246, 193, 193, 0.2)"
+          },
+          {
+              "label": "ETH",
+              "data": [-16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5],
+              "borderColor": "#d4e157",
+              "backgroundColor": "rgba(212, 225, 87, 0.2)"
+          },
+          {
+              "label": "MATIC",
+              "data": [-18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7],
+              "borderColor": "#00bcd4",
+              "backgroundColor": "rgba(0, 188, 212, 0.2)"
+          },
+          {
+              "label": "ATOM",
+              "data": [-16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5],
+              "borderColor": "#ffeb3b",
+              "backgroundColor": "rgba(255, 235, 59, 0.2)"
+          }
+      ]
+  },
+  "yearly": {
+      "labels": ["2022", "2023", "2024"],
+      "datasets": [
+          {
+              "label": "PEPE",
+              "data": [-20, -15, -10, -5],
+              "borderColor": "#ff6f61",
+              "backgroundColor": "rgba(255, 111, 97, 0.2)"
+          },
+          {
+              "label": "DOGE",
+              "data": [-14, -10, -5, 0],
+              "borderColor": "#6b5b95",
+              "backgroundColor": "rgba(107, 91, 149, 0.2)"
+          },
+          {
+              "label": "FLOKI",
+              "data": [-19, -14, -9, -4],
+              "borderColor": "#88d8b0",
+              "backgroundColor": "rgba(136, 216, 176, 0.2)"
+          },
+          {
+              "label": "STX",
+              "data": [-14, -9, -4, 1],
+              "borderColor": "#ffd700",
+              "backgroundColor": "rgba(255, 215, 0, 0.2)"
+          }
+      ]
   }
-]
+}
