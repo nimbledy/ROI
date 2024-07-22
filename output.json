@@ -1,0 +1,241 @@
+{
+    "daily": {
+        "labels": [
+            "2024-07-11",
+            "2024-08-11"
+        ],
+        "datasets": [
+            {
+                "label": "PEPE",
+                "data": [
+                    -20,
+                    -20
+                ],
+                "borderColor": "#ff6f61",
+                "backgroundColor": "rgba(255, 111, 97, 0.2)"
+            },
+            {
+                "label": "DOGE",
+                "data": [
+                    -14,
+                    -14
+                ],
+                "borderColor": "#6b5b95",
+                "backgroundColor": "rgba(107, 91, 149, 0.2)"
+            },
+            {
+                "label": "FLOKI",
+                "data": [
+                    -19,
+                    -19
+                ],
+                "borderColor": "#88d8b0",
+                "backgroundColor": "rgba(136, 216, 176, 0.2)"
+            },
+            {
+                "label": "STX",
+                "data": [
+                    -14,
+                    -14
+                ],
+                "borderColor": "#ffd700",
+                "backgroundColor": "rgba(255, 215, 0, 0.2)"
+            },
+            {
+                "label": "ARB",
+                "data": [
+                    -23,
+                    -23
+                ],
+                "borderColor": "#f6c1c1",
+                "backgroundColor": "rgba(246, 193, 193, 0.2)"
+            },
+            {
+                "label": "ETH",
+                "data": [
+                    -16,
+                    -16
+                ],
+                "borderColor": "#d4e157",
+                "backgroundColor": "rgba(212, 225, 87, 0.2)"
+            },
+            {
+                "label": "MATIC",
+                "data": [
+                    -18,
+                    -18
+                ],
+                "borderColor": "#00bcd4",
+                "backgroundColor": "rgba(0, 188, 212, 0.2)"
+            },
+            {
+                "label": "ATOM",
+                "data": [
+                    -16,
+                    -16
+                ],
+                "borderColor": "#ffeb3b",
+                "backgroundColor": "rgba(255, 235, 59, 0.2)"
+            }
+        ]
+    },
+    "monthly": {
+        "labels": [
+            "2024-07",
+            "2024-08"
+        ],
+        "datasets": [
+            {
+                "label": "PEPE",
+                "data": [
+                    -20,
+                    -20
+                ],
+                "borderColor": "#ff6f61",
+                "backgroundColor": "rgba(255, 111, 97, 0.2)"
+            },
+            {
+                "label": "DOGE",
+                "data": [
+                    -14,
+                    -14
+                ],
+                "borderColor": "#6b5b95",
+                "backgroundColor": "rgba(107, 91, 149, 0.2)"
+            },
+            {
+                "label": "FLOKI",
+                "data": [
+                    -19,
+                    -19
+                ],
+                "borderColor": "#88d8b0",
+                "backgroundColor": "rgba(136, 216, 176, 0.2)"
+            },
+            {
+                "label": "STX",
+                "data": [
+                    -14,
+                    -14
+                ],
+                "borderColor": "#ffd700",
+                "backgroundColor": "rgba(255, 215, 0, 0.2)"
+            },
+            {
+                "label": "ARB",
+                "data": [
+                    -23,
+                    -23
+                ],
+                "borderColor": "#f6c1c1",
+                "backgroundColor": "rgba(246, 193, 193, 0.2)"
+            },
+            {
+                "label": "ETH",
+                "data": [
+                    -16,
+                    -16
+                ],
+                "borderColor": "#d4e157",
+                "backgroundColor": "rgba(212, 225, 87, 0.2)"
+            },
+            {
+                "label": "MATIC",
+                "data": [
+                    -18,
+                    -18
+                ],
+                "borderColor": "#00bcd4",
+                "backgroundColor": "rgba(0, 188, 212, 0.2)"
+            },
+            {
+                "label": "ATOM",
+                "data": [
+                    -16,
+                    -16
+                ],
+                "borderColor": "#ffeb3b",
+                "backgroundColor": "rgba(255, 235, 59, 0.2)"
+            }
+        ]
+    },
+    "yearly": {
+        "labels": [
+            "2024"
+        ],
+        "datasets": [
+            {
+                "label": "PEPE",
+                "data": [
+                    -20,
+                    -20
+                ],
+                "borderColor": "#ff6f61",
+                "backgroundColor": "rgba(255, 111, 97, 0.2)"
+            },
+            {
+                "label": "DOGE",
+                "data": [
+                    -14,
+                    -14
+                ],
+                "borderColor": "#6b5b95",
+                "backgroundColor": "rgba(107, 91, 149, 0.2)"
+            },
+            {
+                "label": "FLOKI",
+                "data": [
+                    -19,
+                    -19
+                ],
+                "borderColor": "#88d8b0",
+                "backgroundColor": "rgba(136, 216, 176, 0.2)"
+            },
+            {
+                "label": "STX",
+                "data": [
+                    -14,
+                    -14
+                ],
+                "borderColor": "#ffd700",
+                "backgroundColor": "rgba(255, 215, 0, 0.2)"
+            },
+            {
+                "label": "ARB",
+                "data": [
+                    -23,
+                    -23
+                ],
+                "borderColor": "#f6c1c1",
+                "backgroundColor": "rgba(246, 193, 193, 0.2)"
+            },
+            {
+                "label": "ETH",
+                "data": [
+                    -16,
+                    -16
+                ],
+                "borderColor": "#d4e157",
+                "backgroundColor": "rgba(212, 225, 87, 0.2)"
+            },
+            {
+                "label": "MATIC",
+                "data": [
+                    -18,
+                    -18
+                ],
+                "borderColor": "#00bcd4",
+                "backgroundColor": "rgba(0, 188, 212, 0.2)"
+            },
+            {
+                "label": "ATOM",
+                "data": [
+                    -16,
+                    -16
+                ],
+                "borderColor": "#ffeb3b",
+                "backgroundColor": "rgba(255, 235, 59, 0.2)"
+            }
+        ]
+    }
+}
