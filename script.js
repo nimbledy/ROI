@@ -11,7 +11,7 @@ window.onload = () => {
 let currentPeriod = 'daily';
 
 async function fetchChartData(period) {
-    const response = await fetch('output.json');
+    const response = await fetch('data.json');
     const data = await response.json();
     return data[period];
 }
